@@ -1,0 +1,26 @@
+{
+  "title": "Kubernetes Auto-Scaling",
+  "description": "Kubernetes scales up and down the resources to match the load demand.",
+  "difficulty": "intermediate",
+  "time": "7 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1 - Run Command",
+      "text": "step1.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}
