@@ -9,29 +9,31 @@
 ## Adding some commands
   - Command 2: 
     
-    `vim metrics-server/deploy/kubernetes/metrics-server-deployment.yaml`
+    `vim metrics-server/deploy/kubernetes/metrics-server-deployment.yaml`{{execute}}
   
   This is a manifest yaml file, adding few lines of yaml script to make it work properly. 
 
     #NEW commands to add starting here ----
+    
     command:
     `- /metrics-server
     - --metric-resolution=30s
     - --kubelet-insecure-tls
-    - --kubelet-preferred-address-types=InternalIP`<br/>
+    - --kubelet-preferred-address-types=InternalIP`<br/>{{copy}}
+    
     #... ending here<br/>
     volumeMounts:<br/>
-    #some more script code already present in file...
+    #...
     
 ## Installation of Metric server
   - Command 3: 
-  `kubectl apply -f .`
+  `kubectl apply -f .`{{execute}}
   
 ## Verification of installation 
   - Command 4: 
-  `kubectl get po -n kube-system |grep metrics`
+  `kubectl get po -n kube-system |grep metrics`{{execute}}
 
 ## View metrics information 
   Wait 15 seconds to allow processes to up and hit following command:
   - Command 5: 
-  `kubectl top pod --all-namespaces`
+  `kubectl top pod --all-namespaces`{{execute}}
