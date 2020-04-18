@@ -1,12 +1,15 @@
 # Kubernetes Metric Server
   Metrics Server tells about resource usage data. It collects metrics like CPU or memory consumption for pods.
-  - Command 1: Clone K8s Metric Server from GitHub:
-  cd /
-  git clone https://github.com/kubernetes-incubator/metrics-server.git
+  - Command 1: Clone K8s Metric Server from GitHub
+    
+    cd /
+    
+    git clone https://github.com/kubernetes-incubator/metrics-server.git
 
 ## Adding some commands
   - Command 2: 
-  vim cd /root/metrics-server/deploy/kubernetes/metrics-server-deployment.yaml
+    
+    vim cd /root/metrics-server/deploy/kubernetes/metrics-server-deployment.yaml
   
   This is a manifest yaml file, adding few lines of yaml script to make it work properly. 
 
