@@ -2,7 +2,8 @@
   Metrics Server tells about resource usage data. It collects metrics like CPU or memory consumption for pods.
   - Command 1: Clone K8s Metric Server from GitHub
     
-    cd /{{execute}}
+    cd /{{execute}}<br/>
+    
     git clone https://github.com/kubernetes-incubator/metrics-server.git{{execute}}
 
 ## Adding some commands
