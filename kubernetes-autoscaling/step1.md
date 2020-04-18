@@ -15,12 +15,12 @@
 
     #NEW commands to add starting here ----
     command:
-    - /metrics-server
+    `- /metrics-server
     - --metric-resolution=30s
     - --kubelet-insecure-tls
-    - --kubelet-preferred-address-types=InternalIP
-    #... ending here
-    volumeMounts:
+    - --kubelet-preferred-address-types=InternalIP`<br/>
+    #... ending here<br/>
+    volumeMounts:<br/>
     #some more script code already present in file...
     
 ## Installation of Metric server
