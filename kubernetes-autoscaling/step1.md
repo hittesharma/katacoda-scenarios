@@ -11,19 +11,13 @@
     
     `vim metrics-server/deploy/kubernetes/metrics-server-deployment.yaml`{{execute}}
   
-  This is a manifest yaml file, adding few lines of yaml script to make it work properly. 
-
-    #NEW commands to add starting here ----
+  This is a manifest yaml file, adding few lines of yaml script to make it work properly.
     
-    command:
-    `- /metrics-server
+    `command:
+    - /metrics-server
     - --metric-resolution=30s
     - --kubelet-insecure-tls
-    - --kubelet-preferred-address-types=InternalIP`<br/>{{copy}}
-    
-    #... ending here<br/>
-    volumeMounts:<br/>
-    #...
+    - --kubelet-preferred-address-types=InternalIP`{{copy}}
     
 ## Installation of Metric server
   - Command 3: 
