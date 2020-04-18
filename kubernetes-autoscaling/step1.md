@@ -9,7 +9,7 @@
 ## Adding some commands
   - Command 2: 
     
-    `vim cd /root/metrics-server/deploy/kubernetes/metrics-server-deployment.yaml`
+    `vim /root/metrics-server/deploy/kubernetes/metrics-server-deployment.yaml`
   
   This is a manifest yaml file, adding few lines of yaml script to make it work properly. 
 
