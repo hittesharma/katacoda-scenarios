@@ -19,7 +19,7 @@
      - --metric-resolution=30s
      - --kubelet-insecure-tls
      - --kubelet-preferred-address-types=InternalIP`
-    ```
+    ```{{copy}}
     
 ## Installation of Metric server
   - Command 3: 
