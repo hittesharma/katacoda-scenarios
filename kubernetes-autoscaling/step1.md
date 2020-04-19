@@ -14,11 +14,11 @@
   This is a manifest yaml file, adding few lines of yaml script to make it work properly.
     
     ```
-           command:
-           - /metrics-server
-           - --metric-resolution=30s
-           - --kubelet-insecure-tls
-           - --kubelet-preferred-address-types=InternalIP`
+            command:
+            - /metrics-server
+            - --metric-resolution=30s
+            - --kubelet-insecure-tls
+            - --kubelet-preferred-address-types=InternalIP`
     ```{{copy}}
     
 ## Installation of Metric server
