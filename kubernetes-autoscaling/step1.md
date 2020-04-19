@@ -28,9 +28,14 @@
 ## View metrics information 
   Wait 20 seconds to allow processes to come up and hit following command:
   - Command 4: 
-  `kubectl top pod --all-namespaces`{{execute}}
+  `kubectl get po -n kube-system |grep metrics`{{execute}}
+  `kubectl get deployment metrics-server -n kube-system`{{execute}}
   
- ---------------------
+## Verify metrics server is running desired number of pods
+   - Command 5:
+   `kubectl get deployment metrics-server -n kube-system`{{execute}}
+
+---------------------
   
 # Installation of Web App & overloading it
 In this we will setup a pod that this actually a web server app which prints word 'OK!' upon request.
@@ -81,11 +86,12 @@ Go back to the previous terminal where pod named hpa-demo-web was running. Follo
   
 ### Configuring pod auto-scaling (horizontal) for our deployment 
    - Command 13:
-   `kubectl autoscale deployment hpa-demo-web --cpu-percent=5 --min=1 --max=5`
+   `kubectl autoscale deployment hpa-demo-web --cpu-percent=5 --min=1 --max=5`{{execute}}
    
-### 
+### Creating more pods to spread the load, run this command in the interval of 30 seconds to view the difference
+   - Command 14: 
+   `kubectl get hpa`{{execute}}
 
-kubectl get hpa
-
-`kubectl get pod | grep hpa-demo-web`
-
+### Observe pod creation as per demand 
+   - Command 15:
+   `kubectl get pod | grep hpa-demo-web`{{execute}}
