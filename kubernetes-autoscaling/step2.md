@@ -18,7 +18,7 @@ Command 4:
 
 ### Verification of running service
 Command 5: 
-`kubectl expose deployment hpa-demo-web --type=NodePort`{{execute}}
+    `kubectl get service | grep hpa-demo-web`{{execute}}
 
 ## Overloading the webapp
 Running a loop in the test container that continuously calls hpa-demo-web service
