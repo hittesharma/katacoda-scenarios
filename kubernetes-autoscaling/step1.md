@@ -29,8 +29,6 @@
   Wait 20 seconds to allow processes to come up and hit following command:
   - Command 4: 
   `kubectl get po -n kube-system |grep metrics`{{execute}}
-  OR
-  `kubectl get deployment metrics-server -n kube-system`{{execute}}
   
 ## Verify metrics server is running desired number of pods
    - Command 5:
