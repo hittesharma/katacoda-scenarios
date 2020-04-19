@@ -23,7 +23,7 @@
     
 ## Installation of Metric server
   - Command 3: 
-  `kubectl apply -f .`{{execute}}
+  `kubectl apply -f metrics-server/deploy/kubernetes/`{{execute}}
   
 ## Verification of installation 
   - Command 4: 
