@@ -14,11 +14,11 @@
   This is a manifest yaml file, adding few lines of yaml script to make it work properly.
     
     ```
-     command:
-     - /metrics-server
-     - --metric-resolution=30s
-     - --kubelet-insecure-tls
-     - --kubelet-preferred-address-types=InternalIP`
+           command:
+           - /metrics-server
+           - --metric-resolution=30s
+           - --kubelet-insecure-tls
+           - --kubelet-preferred-address-types=InternalIP`
     ```{{copy}}
     
 ## Installation of Metric server
@@ -30,6 +30,6 @@
   `kubectl get po -n kube-system |grep metrics`{{execute}}
 
 ## View metrics information 
-  Wait 15 seconds to allow processes to up and hit following command:
+  Wait 20 seconds to allow processes to come up and hit following command:
   - Command 5: 
   `kubectl top pod --all-namespaces`{{execute}}
