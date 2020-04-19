@@ -67,7 +67,25 @@ Running a loop in the test container that continuously calls hpa-demo-web servic
 
 ### Creating traffic
   - Command 11:
-`echo "while true; do wget -q -O- http://hpa-demo-web.default.svc.cluster.local ; done" > loops.sh | chmod +x loops.sh | sh loops.sh`{{execute}}
+  `echo "while true; do wget -q -O- http://hpa-demo-web.default.svc.cluster.local ; done" > loops.sh | chmod +x loops.sh | sh       loops.sh`{{execute}}
 
+Don't close the terminal, let the traffic flow. If you wish then you could run this in background using &
 
+-----------------------------------
+## Setting up pod auto-scaling
+
+### Listing pods running on high CPU utilization
+Go back to the previous terminal where pod named hpa-demo-web was running. Following command requests metrics server.
+  - Command 12:
+  `kubectl top pods --all-namespaces`{{execute}}
+  
+### Configuring pod auto-scaling (horizontal) for our deployment 
+   - Command 13:
+   `kubectl autoscale deployment hpa-demo-web --cpu-percent=5 --min=1 --max=5`
+   
+### 
+
+kubectl get hpa
+
+`kubectl get pod | grep hpa-demo-web`
 
