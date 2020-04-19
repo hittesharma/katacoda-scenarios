@@ -8,6 +8,9 @@
       "title": "Step 1 - Run Command",
       "text": "step1.md"
     }],
+    "steps": {
+      "text": "step2.md"
+    }
     "intro": {
       "text": "intro.md",
       "credits": ""
