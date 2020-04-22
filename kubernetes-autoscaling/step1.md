@@ -5,7 +5,7 @@
     
 ## Installation of Metrics server
   - Command 3: 
-  `kubectl apply -f katacoda-scenarios/kubernetes-autoscaling/`{{execute}}
+  `kubectl apply -f katacoda-scenarios/kubernetes-autoscaling/components.yaml`{{execute}}
 
 ## View metrics information 
   Wait 20 seconds to allow processes to come up and hit following command:
