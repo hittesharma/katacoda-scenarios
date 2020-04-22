@@ -96,7 +96,12 @@ spec:
           readOnlyRootFilesystem: true
           runAsNonRoot: true
           runAsUser: 1000
-        volumeMounts:
+#################### NEW LINES ADDITION ##################       
+        command:
+        - --kubelet-insecure-tls
+        - --kubelet-preferred-address-types=InternalIP
+#################### LINES END ############################
+         volumeMounts:
         - name: tmp-dir
           mountPath: /tmp
       nodeSelector:
