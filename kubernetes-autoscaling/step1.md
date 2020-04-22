@@ -1,29 +1,11 @@
-# Kubernetes Metric Server
-  Metrics Server tells about resource usage data. It collects metrics like CPU or memory consumption for pods.
-  - Command 1: Clone K8s Metric Server from GitHub
-    
-    `cd /`{{execute}}<br/>
-    
-     `git clone https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.3.6`{{execute}}
+# Kubernetes Metrics Server
 
-## Adding some parameters
-  - Command 2: 
+## Cloning the metrics server configuration
+`https://github.com/hittesharma/katacoda-scenarios.git`{{execute}}
     
-    `vim metrics-server/deploy/kubernetes/metrics-server-deployment.yaml`{{execute}}
-  
-  This is a manifest yaml file, adding few lines of yaml script to make it work properly.
-    
-    ```
-            command:
-            - /metrics-server
-            - --metric-resolution=30s
-            - --kubelet-insecure-tls
-            - --kubelet-preferred-address-types=InternalIP
-    ```{{copy}}
-    
-## Installation of Metric server
+## Installation of Metrics server
   - Command 3: 
-  `kubectl apply -f metrics-server/deploy/kubernetes/`{{execute}}
+  `kubectl apply -f kubernetes-autoscaling/`{{execute}}
 
 ## View metrics information 
   Wait 20 seconds to allow processes to come up and hit following command:
