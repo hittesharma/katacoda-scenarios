@@ -96,13 +96,14 @@ spec:
         securityContext:
           readOnlyRootFilesystem: true
           runAsNonRoot: true
-          runAsUser: 1000
-#################### NEW LINES ADDITION ##################       
+          runAsUser: 1000    
+        ## NEW LINES by Hitesh  
         command:
+        - --metric-resolution=30s
         - --kubelet-insecure-tls
         - --kubelet-preferred-address-types=InternalIP
-#################### LINES END ############################
-         volumeMounts:
+        ## NEW LINES ENDS HERE
+        volumeMounts:
         - name: tmp-dir
           mountPath: /tmp
       nodeSelector:
