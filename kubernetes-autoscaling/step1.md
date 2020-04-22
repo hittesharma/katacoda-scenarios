@@ -1,11 +1,11 @@
-# Kubernetes Metrics Server
+# Kubernetes Metrics Server</br></br>
 
 ## Cloning the metrics server configuration
-`https://github.com/hittesharma/katacoda-scenarios.git`{{execute}}
+`git clone https://github.com/hittesharma/katacoda-scenarios.git`{{execute}}
     
 ## Installation of Metrics server
   - Command 3: 
-  `kubectl apply -f kubernetes-autoscaling/`{{execute}}
+  `kubectl apply -f katacoda-scenarios/kubernetes-autoscaling/`{{execute}}
 
 ## View metrics information 
   Wait 20 seconds to allow processes to come up and hit following command:
