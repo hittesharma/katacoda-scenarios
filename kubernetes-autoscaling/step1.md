@@ -5,6 +5,7 @@
     `cd /`{{execute}}<br/>
     
     `git clone https://github.com/kubernetes-incubator/metrics-server.git`{{execute}}
+     `git clone https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.3.6/components.yaml`{{execute}}
 
 ## Adding some parameters
   - Command 2: 
