@@ -2,7 +2,7 @@
   "title": "Kubernetes Auto-Scaling",
   "description": "Kubernetes scales up and down the resources to match the load demand.",
   "difficulty": "intermediate",
-  "time": "7 minutes",
+  "time": "9 minutes",
   "details": {
     "steps": [{
       "title": "Step 1 - Run Command",
