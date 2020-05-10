@@ -1,0 +1,3 @@
+kube-prometheus provides a straightforward way to introduce visualization and monitoring to your Kubernetes cluster, and can be used to keep track of many other metrics besides autocaling. The default dashboards provide access to performance and traffic metrics, per namespace/pod/deployment. And even allows us to create new dashboards to suit our needs. Be sure to use that in your favor!
+
+We hope you enjoyed it and learned something new :)

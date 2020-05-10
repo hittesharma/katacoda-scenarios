@@ -1,0 +1,46 @@
+{
+  "title": "K8s Autoscaling and visualization",
+  "description": "Set up an autoscaling deployment and visualize behaviour w/ kube-prometheus",
+  "difficulty": "Intermediate",
+  "time": "25m",
+  "details": {
+    "steps": [
+      {
+        "title": "Minikube setup",
+        "text": "step1.md"
+      },
+      {
+        "title": "Monitoring containers and namespace",
+        "text": "step2.md"
+      },
+      {
+        "title": "Expose monitoring services",
+        "text": "step3.md"
+      },
+      {
+        "title": "Import custom dashboard",
+        "text": "step4.md"
+      },
+      {
+        "title": "Create server and autoscaler",
+        "text": "step5.md"
+      },
+      {
+        "title": "Generate load",
+        "text": "step6.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "minikube-running"
+  }
+}
